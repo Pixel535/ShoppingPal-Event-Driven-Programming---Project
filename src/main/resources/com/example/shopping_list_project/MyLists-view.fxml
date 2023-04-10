@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shopping_list_project.MyListsController">
+   <children>
+      <Button fx:id="HomeButton" layoutX="50.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#SwitchToHomeScene">
+         <graphic>
+            <FontAwesomeIcon glyphName="HOME" size="3em" />
+         </graphic>
+      </Button>
+      <Button fx:id="AddListButton" layoutX="990.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#AddLists" text="   ADD NEW LIST">
+         <graphic>
+            <FontAwesomeIcon glyphName="PLUS" size="3em" />
+         </graphic>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="searchLabel" layoutX="423.0" layoutY="105.0" text="Search for your List:">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="SearchBar" layoutX="310.0" layoutY="175.0" prefHeight="44.0" prefWidth="494.0">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="SearchButton" layoutX="824.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#Search" prefHeight="44.0" prefWidth="68.0">
+         <graphic>
+            <FontAwesomeIcon glyphName="SEARCH" size="3em" />
+         </graphic>
+      </Button>
+      <ListView fx:id="ListOfList" layoutX="310.0" layoutY="251.0" prefHeight="472.0" prefWidth="582.0" />
+      <Button fx:id="RemoveButton" layoutX="965.0" layoutY="319.0" mnemonicParsing="false" onMouseClicked="#RemoveList" text="   REMOVE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon glyphName="REMOVE" size="2em" />
+         </graphic>
+      </Button>
+      <Button fx:id="OpenButton" layoutX="965.0" layoutY="423.0" mnemonicParsing="false" onMouseClicked="#OpenList" prefHeight="64.0" prefWidth="197.0" text="   OPEN">
+         <graphic>
+            <FontAwesomeIcon glyphName="FOLDER" size="2em" />
+         </graphic>
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="NoListsLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="493.0" layoutY="197.0" text="There are no lists !&#10;Try to add some" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shopping_list_project.HomeController">
+   <children>
+      <BorderPane layoutX="1.0" layoutY="1.0" prefHeight="800.0" prefWidth="1200.0">
+         <left>
+            <AnchorPane fx:id="menu" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: #DEDEDE;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="HomeButton" layoutY="150.0" mnemonicParsing="false" onMouseClicked="#SwitchToHomeScene" prefWidth="300.0" text="   HOME">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon glyphName="HOME" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="MyListsButton" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#SwitchToMyListsScene" prefWidth="300.0" text="   MY LISTS">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon glyphName="LIST" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="bar2" alignment="CENTER" contentDisplay="CENTER" layoutX="225.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#MenuSlideOut">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="CHEVRON_LEFT" size="2em" />
+                     </graphic>
+                  </Button>
+               </children></AnchorPane>
+         </left>
+      </BorderPane>
+      <Button fx:id="bar1" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#MenuSlideIn">
+         <graphic>
+            <FontAwesomeIcon glyphName="BARS" size="2em" />
+         </graphic>
+      </Button>
+      <ImageView fx:id="fastShoppingCart" fitHeight="100.0" fitWidth="134.0" layoutX="460.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="400.0" layoutY="200.0" text="Shopping">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label layoutX="595.0" layoutY="290.0" text="Pal">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="64.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="750.0" layoutY="75.0" prefHeight="650.0" prefWidth="400.0" style="-fx-background-radius: 30px; -fx-background-color: #DEDEDE;">
+         <children>
+            <AnchorPane fx:id="NoListsAnchorPane" layoutY="80.0" prefHeight="580.0" prefWidth="400.0" visible="false">
+               <children>
+                  <Label fx:id="NoListText" layoutX="90.0" layoutY="25.0" text="There are no lists !&#10;Try to add some" textAlignment="CENTER" textFill="#808080">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="NoListsButton" layoutX="175.0" layoutY="100.0" mnemonicParsing="false">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="PLUS" onMouseClicked="#AddLists" size="3em" />
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Label layoutX="30.0" layoutY="25.0" text="My Lists" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="36.0" />
+               </font>
+            </Label>
+            <ListView fx:id="ListOfLists" layoutX="20.0" layoutY="80.0" prefHeight="548.0" prefWidth="362.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
