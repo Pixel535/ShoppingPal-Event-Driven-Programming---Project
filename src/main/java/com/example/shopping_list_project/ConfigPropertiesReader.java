@@ -31,7 +31,6 @@ public class ConfigPropertiesReader {
         ListFunctions.productName_key = prop.getProperty("api.json.array.product_name.key");
         ListFunctions.quantity_key = prop.getProperty("api.json.array.quantity");
         ListFunctions.price_key = prop.getProperty("api.json.array.price.key");
-        ListFunctions.bought_key = prop.getProperty("api.json.array.bought");
         ListFunctions.nazwaListy_key = prop.getProperty("api.json.array.nazwa_listy");
         ListFunctions.ShoppingList_key = prop.getProperty("api.json.array.shopping_list");
         ListFunctions.listName_key = prop.getProperty("api.json.array.listName_list");

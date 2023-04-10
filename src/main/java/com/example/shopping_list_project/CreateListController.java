@@ -148,7 +148,7 @@ public class CreateListController {
             if(!error2.isVisible() && !ProductName.trim().isEmpty())
             {
                 price = quantity * price;
-                Product product = new Product(ProductName, quantity, false, price);
+                Product product = new Product(ProductName, quantity, price);
                 ListFunctions.addProduct(ListName, product);
             }
         }
@@ -177,7 +177,7 @@ public class CreateListController {
             if(!error3.isVisible() && !error4.isVisible() && !error5.isVisible())
             {
                 price = quantity * price;
-                Product product = new Product(ProductName, quantity, false, price);
+                Product product = new Product(ProductName, quantity, price);
                 ListFunctions.addProduct(ListName, product);
             }
 

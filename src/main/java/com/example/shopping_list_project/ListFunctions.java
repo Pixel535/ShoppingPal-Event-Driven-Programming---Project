@@ -39,8 +39,7 @@ public class ListFunctions {
         Document listItem = new Document()
                 .append(productName_key, product.getName())
                 .append(quantity_key, product.getQuantity())
-                .append(price_key, product.getPrice())
-                .append(bought_key, product.isPurchased());
+                .append(price_key, product.getPrice());
         Document query = new Document().append(nazwaListy_key, listName);
         Document update = new Document().append("$push", new Document().append(ShoppingList_key, listItem));
 
@@ -63,9 +62,8 @@ public class ListFunctions {
                     {
                         String productName = item.getString(productName_key);
                         int quantity = item.getInteger(quantity_key);
-                        boolean bought = item.getBoolean(bought_key);
                         double price = item.getDouble(price_key);
-                        Product product = new Product(productName, quantity, bought, price);
+                        Product product = new Product(productName, quantity, price);
                         productList.add(product);
                     }
                     ShoppingList shoppingListObj = new ShoppingList(listName, productList);
@@ -101,9 +99,8 @@ public class ListFunctions {
                     for (Document item : shoppingList) {
                         String productName = item.getString(productName_key);
                         int quantity = item.getInteger(quantity_key);
-                        boolean bought = item.getBoolean(bought_key);
                         double price = item.getDouble(price_key);
-                        Product product = new Product(productName, quantity, bought, price);
+                        Product product = new Product(productName, quantity, price);
                         productList.add(product);
                     }
                     ShoppingList shoppingListObj = new ShoppingList(listName, productList);

@@ -52,7 +52,7 @@ public class OpenFoodFactsAPISearch {
                     }
                     String productName = product.getString(productName_key);
                     double productPrice = product.optDouble(price_key, 0.0);
-                    Product newProduct = new Product(productName, 1, false, productPrice);
+                    Product newProduct = new Product(productName, 1, productPrice);
                     result.add(newProduct);
                 }
             }
