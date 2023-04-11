@@ -1,5 +1,9 @@
 package com.example.shopping_list_project;
 
+import com.example.shopping_list_project.Config.ConfigPropertiesReader;
+import com.example.shopping_list_project.EventsAndSubscribers.DeletedListSubscriber;
+import com.example.shopping_list_project.ListsAndProducts.ListFunctions;
+import com.example.shopping_list_project.ListsAndProducts.ShoppingList;
 import com.google.common.eventbus.EventBus;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -55,7 +59,7 @@ public class MyListsController implements Initializable {
     public static String CreateListView;
     public static String ListView;
 
-    private ListFunctions ListFunctions;
+    private com.example.shopping_list_project.ListsAndProducts.ListFunctions ListFunctions;
     private List<ShoppingList> AllLists;
     private ObservableList<String> AllListsNames;
     private EventBus eventBus;

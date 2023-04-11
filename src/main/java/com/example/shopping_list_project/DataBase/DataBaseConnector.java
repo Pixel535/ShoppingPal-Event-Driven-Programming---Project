@@ -1,4 +1,4 @@
-package com.example.shopping_list_project;
+package com.example.shopping_list_project.DataBase;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoDatabase;

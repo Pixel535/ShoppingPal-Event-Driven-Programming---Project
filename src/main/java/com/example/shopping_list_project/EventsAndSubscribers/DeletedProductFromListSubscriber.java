@@ -1,5 +1,6 @@
-package com.example.shopping_list_project;
+package com.example.shopping_list_project.EventsAndSubscribers;
 
+import com.example.shopping_list_project.EventsAndSubscribers.DeletedProductEvent;
 import com.google.common.eventbus.Subscribe;
 import javafx.application.Platform;
 import javafx.scene.control.Label;

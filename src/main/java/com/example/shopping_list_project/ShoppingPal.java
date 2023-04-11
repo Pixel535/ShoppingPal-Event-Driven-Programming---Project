@@ -1,6 +1,6 @@
 package com.example.shopping_list_project;
 
-import com.mongodb.client.MongoDatabase;
+import com.example.shopping_list_project.Config.ConfigPropertiesReader;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

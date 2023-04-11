@@ -1,4 +1,4 @@
-package com.example.shopping_list_project;
+package com.example.shopping_list_project.ListsAndProducts;
 
 public class Product {
     private String name;

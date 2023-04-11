@@ -1,4 +1,6 @@
-package com.example.shopping_list_project;
+package com.example.shopping_list_project.ListsAndProducts;
+
+import com.example.shopping_list_project.ListsAndProducts.Product;
 
 import java.util.List;
 

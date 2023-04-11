@@ -11,4 +11,12 @@ module com.example.shopping_list_project {
 
     opens com.example.shopping_list_project to javafx.fxml;
     exports com.example.shopping_list_project;
+    exports com.example.shopping_list_project.DataBase;
+    opens com.example.shopping_list_project.DataBase to javafx.fxml;
+    exports com.example.shopping_list_project.Config;
+    opens com.example.shopping_list_project.Config to javafx.fxml;
+    exports com.example.shopping_list_project.EventsAndSubscribers;
+    opens com.example.shopping_list_project.EventsAndSubscribers to javafx.fxml;
+    exports com.example.shopping_list_project.ListsAndProducts;
+    opens com.example.shopping_list_project.ListsAndProducts to javafx.fxml;
 }

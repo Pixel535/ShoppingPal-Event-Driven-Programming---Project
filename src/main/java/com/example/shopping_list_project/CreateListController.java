@@ -1,6 +1,9 @@
 package com.example.shopping_list_project;
 
-import javafx.application.Platform;
+import com.example.shopping_list_project.Config.ConfigPropertiesReader;
+import com.example.shopping_list_project.ListsAndProducts.ListFunctions;
+import com.example.shopping_list_project.ListsAndProducts.MultithreadingProductSearch;
+import com.example.shopping_list_project.ListsAndProducts.Product;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -17,8 +20,6 @@ import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class CreateListController {
 
@@ -107,7 +108,7 @@ public class CreateListController {
     String ProductName;
     int quantity;
     double price;
-    private ListFunctions ListFunctions;
+    private com.example.shopping_list_project.ListsAndProducts.ListFunctions ListFunctions;
     private MultithreadingProductSearch productSearch = new MultithreadingProductSearch();
 
     @FXML

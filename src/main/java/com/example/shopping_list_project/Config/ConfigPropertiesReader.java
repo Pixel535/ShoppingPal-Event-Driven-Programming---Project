@@ -1,7 +1,11 @@
-package com.example.shopping_list_project;
+package com.example.shopping_list_project.Config;
+
+import com.example.shopping_list_project.*;
+import com.example.shopping_list_project.DataBase.DataBaseConnector;
+import com.example.shopping_list_project.ListsAndProducts.ListFunctions;
+import com.example.shopping_list_project.ListsAndProducts.OpenFoodFactsAPISearch;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;

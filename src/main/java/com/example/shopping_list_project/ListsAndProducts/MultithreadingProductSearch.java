@@ -1,4 +1,4 @@
-package com.example.shopping_list_project;
+package com.example.shopping_list_project.ListsAndProducts;
 
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
@@ -7,12 +7,11 @@ import javafx.collections.ObservableList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.stream.Collectors;
 
 public class MultithreadingProductSearch {
 
     private final ExecutorService executorService;
-    private final OpenFoodFactsAPISearch OpenFoodFactsAPISearch;
+    private final com.example.shopping_list_project.ListsAndProducts.OpenFoodFactsAPISearch OpenFoodFactsAPISearch;
 
 
     public MultithreadingProductSearch() {

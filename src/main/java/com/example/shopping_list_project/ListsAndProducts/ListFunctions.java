@@ -1,5 +1,8 @@
-package com.example.shopping_list_project;
+package com.example.shopping_list_project.ListsAndProducts;
 
+import com.example.shopping_list_project.DataBase.DataBaseConnector;
+import com.example.shopping_list_project.EventsAndSubscribers.DeletedListEvent;
+import com.example.shopping_list_project.EventsAndSubscribers.DeletedProductEvent;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;

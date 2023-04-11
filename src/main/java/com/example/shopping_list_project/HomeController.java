@@ -1,5 +1,8 @@
 package com.example.shopping_list_project;
 
+import com.example.shopping_list_project.Config.ConfigPropertiesReader;
+import com.example.shopping_list_project.ListsAndProducts.ListFunctions;
+import com.example.shopping_list_project.ListsAndProducts.ShoppingList;
 import javafx.animation.TranslateTransition;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -49,7 +52,7 @@ public class HomeController implements Initializable {
     @FXML
     private ListView<String> ListOfLists;
 
-    private ListFunctions ListFunctions;
+    private com.example.shopping_list_project.ListsAndProducts.ListFunctions ListFunctions;
 
     public static String ListView;
     public static String HomeView;

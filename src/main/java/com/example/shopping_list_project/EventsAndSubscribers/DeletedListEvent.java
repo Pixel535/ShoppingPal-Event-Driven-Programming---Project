@@ -1,4 +1,4 @@
-package com.example.shopping_list_project;
+package com.example.shopping_list_project.EventsAndSubscribers;
 
 public class DeletedListEvent {
     private final String listName;

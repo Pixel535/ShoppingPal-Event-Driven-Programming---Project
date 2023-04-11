@@ -1,13 +1,14 @@
-package com.example.shopping_list_project;
+package com.example.shopping_list_project.ListsAndProducts;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.ProtocolException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.example.shopping_list_project.Config.ConfigPropertiesReader;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.apache.commons.lang3.StringUtils;
