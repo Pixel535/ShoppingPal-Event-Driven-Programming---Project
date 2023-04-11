@@ -22,7 +22,6 @@ public class ListFunctions {
     public static String productName_key;
     public static String quantity_key;
     public static String price_key;
-    public static String bought_key;
     public static String nazwaListy_key;
     public static String ShoppingList_key;
     public static String listName_key;
