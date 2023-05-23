@@ -125,8 +125,8 @@ public class CreateListController {
     }
 
     @FXML
-    void AddToList(MouseEvent event) {
-
+    void AddToList(MouseEvent event) throws IOException {
+        ConfigPropertiesReader.ReadPropertiesFile();
         ListFunctions = new ListFunctions();
         if(NotFoundButton.isVisible())
         {
